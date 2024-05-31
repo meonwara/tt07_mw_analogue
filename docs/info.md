@@ -7,14 +7,14 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
-## How it works
+# How it works
 
-Explain how your project works
+Simplistic DDS (accumulator + sinewave lookup table) with resistive DAC to provide analogue output. Board switches control the output frequency.
 
 ## How to test
 
-Explain how to use your project
+With a 40MHz clock selected, change the input switches to some binary value 1-255. Observe a rail to rail sinewave at the analogue pin ua[0].
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+DAC output resistance about 10kOhm. Could add an external capacitor to ground to smooth / filter the waveform.
